@@ -1,0 +1,14 @@
+/*---BASE---*/
+@import './base/_variables.scss';
+@import './base/_base';
+
+/*---LAUOUTS---*/
+@import './layouts/_header.scss';
+@import './layouts/_footer.scss';
+
+/*-----MODULES-----*/
+@import './modules/_firstSection.scss';
+@import 'modules/_aboutSection';
+@import 'modules/_focusSection';
+@import 'modules/_portfolioSection';
+@import 'modules/_teamSection';

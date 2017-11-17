@@ -1,0 +1,41 @@
+.secondSection {
+  background-color: #fff;
+  padding: 15px;
+  margin-bottom: 150px;
+  .wrapper {
+    max-width: 1140px;
+    margin: 0 auto;
+  }
+  .aboutCol{
+    display: flex;
+    justify-content: center;
+
+  }
+  .some-text {
+    padding: 40px 70px;
+    max-width: 400px;
+    background-color: #ffffff;
+    align-self: center;
+    margin-left: -5%;
+    box-shadow: 0 6px 12px 0 rgba(0,0,0,.13);
+    border-style: solid;
+    border-width: 0 0 3px 0;
+    border-image: url('../img/line copy 3.png') 0 0 3 0;
+    &__header{
+     & h2 {
+       font-size: 50px;
+       font-weight: 500;
+       color: #272727;
+       padding-bottom: 50px;
+     }
+    }
+    &__main{
+      & p {
+        color: #272727;
+        font-size: 15px;
+        line-height: 1.8;
+      }
+    }
+  }
+
+}
