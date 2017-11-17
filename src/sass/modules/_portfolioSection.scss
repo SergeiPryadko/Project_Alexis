@@ -14,7 +14,7 @@
       font-weight: 500;
       margin-bottom: 50px;
     }
-    & p {
+    .common {
       text-align: center;
       font-size: 15px;
       color: $colorNav;
@@ -26,9 +26,51 @@
       flex-wrap: wrap;
 
       &__box {
-        padding-right: 20px;
-        padding-bottom: 20px;
+        margin-bottom: 20px;
+        position: relative;
+
       }
+      .box {
+        &:hover .hideblock {
+          opacity: 1;
+          visibility: visible;
+        }
+
+      .hideblock {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        background: rgba(41, 47, 54, 0.4);
+        height: 100%;
+        opacity: 0;
+        visibility: hidden;
+        display: flex;
+        flex-direction: column;
+        transition: 0.3s;
+        .head {
+          height: 100%;
+          display: flex;
+          transition: 0.3s;
+          align-items: center;
+          justify-content: center;
+          border-style: solid;
+          border-width: 0 0 3px 0;
+          border-image: url('../img/line copy 3.png') 0 0 3 0;
+        }
+        .footer {
+          padding: 20px;
+          background: #ffffff;
+          position: relative;
+          transition: 0.3s;
+          & p {
+            text-align: center;
+            font-size: 15px;
+            color: $colorNav;
+          }
+        }
+      }
+    }
     }
   }
 }

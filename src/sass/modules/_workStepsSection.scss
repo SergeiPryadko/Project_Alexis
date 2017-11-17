@@ -1,0 +1,29 @@
+.workStepsSection {
+  background-color: #f7f7f7;
+  padding: 15px;
+  margin-bottom: 150px;
+  .wrapper {
+    max-width: 1140px;
+    margin: 0 auto;
+  }
+  .workMain {
+    padding: 150px 0;
+    & h2 {
+      text-align: center;
+      font-size: 50px;
+      font-weight: 500;
+      margin-bottom: 50px;
+    }
+    & p {
+      text-align: center;
+      font-size: 15px;
+      color: $colorNav;
+      margin-bottom: 90px;
+    }
+  }
+  .workContent{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}

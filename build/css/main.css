@@ -162,8 +162,8 @@ p {
     display: flex;
     justify-content: center; }
   .secondSection .some-text {
-    padding: 40px 70px;
-    max-width: 400px;
+    padding: 35px 45px;
+    max-width: 473px;
     background-color: #ffffff;
     align-self: center;
     margin-left: -5%;
@@ -210,9 +210,14 @@ p {
       margin-right: 40px;
       display: flex;
       flex-direction: column;
-      align-items: center; }
+      align-items: center;
+      transition: transform 0.4s, box-shadow 0.4s; }
       .thirdSection .focusCol__item:last-child {
         margin: 0; }
+      .thirdSection .focusCol__item:hover {
+        box-shadow: 0px 40px 110px -50px #555555;
+        transform: scale(1.05);
+        cursor: pointer; }
       .thirdSection .focusCol__item--col1 {
         border-bottom: 2px solid #fc5f45; }
       .thirdSection .focusCol__item--col2 {
@@ -248,7 +253,7 @@ p {
       font-size: 50px;
       font-weight: 500;
       margin-bottom: 50px; }
-    .fourSection .portfolioMain p {
+    .fourSection .portfolioMain .common {
       text-align: center;
       font-size: 15px;
       color: #272727;
@@ -258,5 +263,62 @@ p {
       justify-content: space-between;
       flex-wrap: wrap; }
       .fourSection .portfolioMain .portfolioBoxes__box {
-        padding-right: 20px;
-        padding-bottom: 20px; }
+        margin-bottom: 20px;
+        position: relative; }
+      .fourSection .portfolioMain .portfolioBoxes .box:hover .hideblock {
+        opacity: 1;
+        visibility: visible; }
+      .fourSection .portfolioMain .portfolioBoxes .box .hideblock {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        background: rgba(41, 47, 54, 0.4);
+        height: 100%;
+        opacity: 0;
+        visibility: hidden;
+        display: flex;
+        flex-direction: column;
+        transition: 0.3s; }
+        .fourSection .portfolioMain .portfolioBoxes .box .hideblock .head {
+          height: 100%;
+          display: flex;
+          transition: 0.3s;
+          align-items: center;
+          justify-content: center;
+          border-style: solid;
+          border-width: 0 0 3px 0;
+          border-image: url("../img/line copy 3.png") 0 0 3 0; }
+        .fourSection .portfolioMain .portfolioBoxes .box .hideblock .footer {
+          padding: 20px;
+          background: #ffffff;
+          position: relative;
+          transition: 0.3s; }
+          .fourSection .portfolioMain .portfolioBoxes .box .hideblock .footer p {
+            text-align: center;
+            font-size: 15px;
+            color: #272727; }
+
+.workStepsSection {
+  background-color: #f7f7f7;
+  padding: 15px;
+  margin-bottom: 150px; }
+  .workStepsSection .wrapper {
+    max-width: 1140px;
+    margin: 0 auto; }
+  .workStepsSection .workMain {
+    padding: 150px 0; }
+    .workStepsSection .workMain h2 {
+      text-align: center;
+      font-size: 50px;
+      font-weight: 500;
+      margin-bottom: 50px; }
+    .workStepsSection .workMain p {
+      text-align: center;
+      font-size: 15px;
+      color: #272727;
+      margin-bottom: 90px; }
+  .workStepsSection .workContent {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; }
